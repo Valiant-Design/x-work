@@ -1,7 +1,12 @@
 let navigation_bar = document.querySelector(".navbar");
 let menus_btn = document.querySelector(".ri-menu-4-line");
 let close_btn = document.querySelector(".ri-close-fill");
-let home_click = document.querySelector("#home");
+let home_click = document.querySelector("#hom");
+let about_click = document.querySelector("#abo");
+let benefits_click = document.querySelector("#ben");
+let faq_click = document.querySelector("#qaf");
+let contact_click = document.querySelector("#con");
+let waitlist_click = document.querySelector(".btn-join-second");
 let header_bar = document.querySelector("header");
 const faqs = document.querySelectorAll('.faq');
 
@@ -17,6 +22,32 @@ close_btn.addEventListener("click", function () {
 
 home_click.addEventListener("click", function () {
   navigation_bar.classList.remove("active");
+  menus_btn.classList.remove("leave");
+});
+
+about_click.addEventListener("click", function () {
+  navigation_bar.classList.remove("active");
+  menus_btn.classList.remove("leave");
+});
+
+benefits_click.addEventListener("click", function () {
+  navigation_bar.classList.remove("active");
+  menus_btn.classList.remove("leave");
+});
+
+faq_click.addEventListener("click", function () {
+  navigation_bar.classList.remove("active");
+  menus_btn.classList.remove("leave");
+});
+
+contact_click.addEventListener("click", function () {
+  navigation_bar.classList.remove("active");
+  menus_btn.classList.remove("leave");
+});
+
+waitlist_click.addEventListener("click", function () {
+  navigation_bar.classList.remove("active");
+  menus_btn.classList.remove("leave");
 });
 
 function myfunc(event) {
