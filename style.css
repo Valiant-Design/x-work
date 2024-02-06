@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
 
-/* Comfortaa font */
+/* Bai Jamjuree */
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap");
 
 :root {
@@ -32,14 +32,18 @@ body {
 .main-body{
   background-color: #e2ebf2;
   padding: 0 10px 0 10px;
-  /* opacity: 1; */
 }
 
 .main-body.active, .header-bar.active{
   filter: blur(10px);
   pointer-events: none;
   user-select: none;
-  /* scroll-behavior: none; */
+}
+
+.header-bar.inactive{
+  position: relative;
+  display: none;
+  opacity: 0;
 }
 
 .header-bar.active{
@@ -51,7 +55,6 @@ body {
 }
 
 header {
-  /* position: fixed; */
   width: 100%;
   display: flex;
   justify-content: space-between;

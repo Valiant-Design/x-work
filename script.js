@@ -73,6 +73,12 @@ function myfunc(event) {
     } else {
       header_bar.classList.remove("disapper");
     }
+
+    if (progressBarWidth >= 92.1) {
+      header_bar.classList.add("inactive");
+    } else {
+      header_bar.classList.remove("inactive");
+    }
   }
 
   window.addEventListener("load", updateReadProgressBar);
@@ -86,6 +92,31 @@ faqs.forEach((faq) => {
 });
 
 document.querySelector("#show-sign").addEventListener("click", function() {
+  document.querySelector(".popup").classList.add("active");
+  document.querySelector(".main-body").classList.add("active");
+  document.querySelector(".header-bar").classList.add("active");
+});
+document.querySelector("#show-log").addEventListener("click", function() {
+  document.querySelector(".popup").classList.add("active");
+  document.querySelector(".main-body").classList.add("active");
+  document.querySelector(".header-bar").classList.add("active");
+});
+document.querySelector("#show-log-in").addEventListener("click", function() {
+  document.querySelector(".popup").classList.add("active");
+  document.querySelector(".main-body").classList.add("active");
+  document.querySelector(".header-bar").classList.add("active");
+});
+document.querySelector("#show-sign-in").addEventListener("click", function() {
+  document.querySelector(".popup").classList.add("active");
+  document.querySelector(".main-body").classList.add("active");
+  document.querySelector(".header-bar").classList.add("active");
+});
+document.querySelector("#show-signIn").addEventListener("click", function() {
+  document.querySelector(".popup").classList.add("active");
+  document.querySelector(".main-body").classList.add("active");
+  document.querySelector(".header-bar").classList.add("active");
+});
+document.querySelector("#show-logIn").addEventListener("click", function() {
   document.querySelector(".popup").classList.add("active");
   document.querySelector(".main-body").classList.add("active");
   document.querySelector(".header-bar").classList.add("active");
