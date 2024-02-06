@@ -84,3 +84,17 @@ faqs.forEach((faq) => {
       faq.classList.toggle("active");
   });
 });
+
+document.querySelector("#show-sign").addEventListener("click", function() {
+  document.querySelector(".popup").classList.add("active");
+  document.querySelector(".main-body").classList.add("active");
+  document.querySelector(".header-bar").classList.add("active");
+});
+
+document.querySelector(".popup .close-btn").addEventListener("click", function() {
+  document.querySelector(".popup").classList.remove("active");
+  document.querySelector(".main-body").classList.remove("active");
+  document.querySelector(".header-bar").classList.remove("active");
+});
+
+

@@ -44,7 +44,7 @@
         <a class="btn-join-second" href="#waitlist">Join the waitlist</a>
       </nav>
 
-      <button class="btn-join">Join the waitlist</button>
+      <button class="btn-join" id="show-sign">Join the waitlist</button>
 
       <div class="btn">
         <i class="ri-menu-4-line"></i>
@@ -69,7 +69,7 @@
               turning your visions into reality. connect effortlessly,
               experience excellence instantly
             </p>
-            <button class="join-now">Join Now</button>
+            <button class="join-now" id="show-sign">Join Now</button>
           </div>
 
           <div class="content-one-img column">
@@ -277,7 +277,8 @@
             <p class="faqs-questions">
               Contact us for more information or assistance.
             </p>
-            <button class="faqs-contact-btn">Contact Us</button>
+            <a href="tel:(+234) 70 685 754 45"><button class="faqs-contact-btn">Contact Us</button></a>
+            <!-- <button class="faqs-contact-btn">Contact Us</button> -->
   
         
         </section>
@@ -304,7 +305,7 @@
         </div>
       </section>
 
-      <!--=============== Seventh Section ===============-->
+      <!--============= Seventh Section ===============-->
       <section class="content-seven">
         <div class="footer-container">
           <div class="footer-content">
@@ -341,5 +342,33 @@
        
       </section>
     </section>
+
+      <!--============= Seventh Section ===============-->
+      <section class="popup-body">
+        <div class="popup">
+          <div class="close-btn">&times;</div>
+          <div class="form">
+            <h2 class="log-in">Join Wailtist Now</h2>
+            <div class="form-element">
+              <label for="text">Email</label>
+              <input type="text" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-element">
+              <label for="password">Password</label>
+              <input type="password" id="passwrd" placeholder="Enter password">
+            </div>
+            <div class="form-element">
+              <input type="checkbox" id="remember-me">
+              <label for="remember-me">Remember me</label>
+            </div>
+            <div class="form-element">
+              <button>Sign in</button>
+            </div>
+            <div class="form-element">
+              <a href="#">Forget password</a>
+            </div>
+          </div>
+        </div>
+      </section>
   </body>
 </html>
