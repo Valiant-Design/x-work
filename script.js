@@ -74,11 +74,11 @@ function myfunc(event) {
       header_bar.classList.remove("disapper");
     }
 
-    if (progressBarWidth >= 92.1) {
-      header_bar.classList.add("inactive");
-    } else {
-      header_bar.classList.remove("inactive");
-    }
+    // if (progressBarWidth >= 92.1) {
+    //   header_bar.classList.add("inactive");
+    // } else {
+    //   header_bar.classList.remove("inactive");
+    // }
   }
 
   window.addEventListener("load", updateReadProgressBar);

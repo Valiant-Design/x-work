@@ -1276,8 +1276,8 @@ ul {
     background: #47b0e4;
     top: 48px;
     right: -100%;
-    align-items: flex-start;
-    justify-content: start;
+    align-items: flex-end;
+    justify-content: right;
     padding-top: 5rem;
     transition: 0.7s;
   }
@@ -1291,19 +1291,21 @@ ul {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 10px 95px 0 0;
+    margin: 10px 65px 0 0;
     color: #fff;
   }
 
   header .navbar a {
     display: block;
     font-size: 1.9rem;
-    margin: 0.5rem 15px;
+    margin: 0.5rem 60px;
+    color: #fff;
   }
 
   header .navbar a:hover {
+    /* background: #fff; */
     background: #fff;
-    color: #47b0e4;
+    /* background: #47b0e4; */
     transition: 0.6s ease;
   }
 
@@ -1712,16 +1714,23 @@ ul {
 
 
 @media (max-width: 498px) {
-  .row {
+  /* .row {
     display: flex;
     flex-direction: column;
     align-items: first baseline;
     margin-left: 2px;
-  }
-
+  } */
+  /* .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+  } */
   .content-one-text {
     padding: 0 30px 10px 2px;
   }
+
 
 
 }
