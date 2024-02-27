@@ -1,16 +1,22 @@
-ScrollReveal({
+const sr = ScrollReveal({
   origin: 'top',
   distance: '60px',
   duration: 2500,
   delay: 400,
   // reset: true,
-});
+})
+
+sr.reveal('.content-one-text, .content-right, .change-img, .offer-header, .sign-right', {origin: 'right'})
+sr.reveal(`.content-one-img, .content-left, .bottom-title, .sign-left, .footer-extention`, {origin: 'left'})
+sr.reveal(`.first-text, .colun, .faq, .first-text, .skill-span, .benefits-header, .change-text, .title, .faqs-answer, .menu, .social-icons, .footer-logo`, {interval: 100})
 
 
-ScrollReveal().reveal('.first-text, .skill-span, .benefits-header, .change-text, .title, .faqs-answer, .menu, .social-icons, .footer-logo', { delay: 500 });
-ScrollReveal().reveal('.content-one-text, .content-right, .change-img, .offer-header, .sign-right',  {origin: 'right'});
-ScrollReveal().reveal('.content-one-img, .content-left, .bottom-title, .sign-left, .footer-extention', {origin: 'left'});
-ScrollReveal().reveal('.colun, .faq', {interval: 200});
+
+
+// ScrollReveal().reveal('.first-text, .skill-span, .benefits-header, .change-text, .title, .faqs-answer, .menu, .social-icons, .footer-logo', { delay: 500 });
+// ScrollReveal().reveal('.content-right, .change-img, .offer-header, .sign-right',  {origin: 'right'});
+// ScrollReveal().reveal('.content-one-img, .content-left, .bottom-title, .sign-left, .footer-extention', {origin: 'left'});
+// ScrollReveal().reveal('.colun, .faq', {interval: 200});
 // ScrollReveal().reveal('.content-right', {interval: -100});
 
 let navigation_bar = document.querySelector(".navbar");
@@ -91,7 +97,7 @@ function myfunc(event) {
 
     // document.querySelector('.scroll-progress div').style.width = progressBarWidth + '%';
 
-    console.log(progressBarWidth);
+    // console.log(progressBarWidth);
 
     if (progressBarWidth >= 1.039570725899587) {
       header_bar.classList.add("disapper");
