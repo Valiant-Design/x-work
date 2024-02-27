@@ -19,6 +19,9 @@
     <!--=============== JS scripts ===============-->
     <script defer src="script.js"></script>
 
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <title>x-work</title>
   </head>
 
@@ -55,11 +58,11 @@
       <section class="content-one" id="home">
         <div class="content-one-container row">
           <div class="content-one-text column">
-            <h1>
+            <h1 class="first-text">
               Your Ideal Service Partner is
               <span style="color: #47b0e4">One-Click</span> Away
             </h1>
-            <p style="text-transform: capitalize">
+            <p class="second-text" style="text-transform: capitalize">
               Simplify your search for exceptional service providers. Xwork is
               your gateway to a network of skilled professionals, committed to
               turning your visions into reality. connect effortlessly,
@@ -106,8 +109,9 @@
 
       <!--=============== Third Section ===============-->
       <section class="third_section_container" id="benefits">
-          <p class="third-p">Changing the Way Services are Accessed</p>
-          <h2>How does it work?</h2>
+          <div class="benefits-header">
+            <p class="third-p">Changing the Way Services are Accessed</p>
+            <h2>How does it work?</h2></div>
         <section class="content-third">
           
           <div class="change-container change">
@@ -145,8 +149,11 @@
       <!--=============== Fourth Section ===============-->
       <section class="content-four">
         <div class="offer-container">
-          <h1>What Benefits Does Choosing</h1>
-          <h1>XWork Offer For Your Use?</h1>
+          <div class="offer-header">
+            <h1>What Benefits Does Choosing</h1>
+            <h1>XWork Offer For Your Use?</h1>
+          </div>
+          
 
           <div class="offer-content">
             <div class="offer-content-one colun">
@@ -193,7 +200,7 @@
       <section class="content-five" id="faq"> 
         <section class="faqs-container">
           <section class="faq-section">
-            <h1 class="title">FAQs</h1> 
+            <h1 class="title">FAQs</h1>
             <p class="faqs-answer">
               Find answers to common questions about the platform, how to join,
               and what to expect.
@@ -271,13 +278,18 @@
                     </p>
                 </div>
             </div>
-        </section>
-            <h2>Still have questions?</h2>
-            <p class="faqs-questions">
+          
+          
+            <div class="bottom-title">
+              <h2>Still have questions?</h2>
+              <p class="faqs-questions">
               Contact us for more information or assistance.
-            </p>
-            <a href="tel:(+234) 70 685 754 45"><button class="faqs-contact-btn">Contact Us</button></a>
-            <!-- <button class="faqs-contact-btn">Contact Us</button> -->
+              </p>
+              <a href="tel:(+234) 70 685 754 45"><button class="faqs-contact-btn">Contact Us</button></a>
+              <!-- <button class="faqs-contact-btn">Contact Us</button> -->
+            </div>
+
+          </section>
   
         
         </section>
@@ -370,5 +382,11 @@
           </div>
         </div>
       </section> -->
+
+    <!--============= LOADER ===============-->
+    <div class="loader"></div> 
+
+
+    
   </body>
 </html>

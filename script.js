@@ -1,3 +1,18 @@
+ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+  // reset: true,
+});
+
+
+ScrollReveal().reveal('.first-text, .skill-span, .benefits-header, .change-text, .title, .faqs-answer, .menu, .social-icons, .footer-logo', { delay: 500 });
+ScrollReveal().reveal('.content-one-text, .content-right, .change-img, .offer-header, .sign-right',  {origin: 'right'});
+ScrollReveal().reveal('.content-one-img, .content-left, .bottom-title, .sign-left, .footer-extention', {origin: 'left'});
+ScrollReveal().reveal('.colun, .faq', {interval: 200});
+// ScrollReveal().reveal('.content-right', {interval: -100});
+
 let navigation_bar = document.querySelector(".navbar");
 let menus_btn = document.querySelector(".ri-menu-4-line");
 let close_btn = document.querySelector(".ri-close-fill");
@@ -9,6 +24,16 @@ let contact_click = document.querySelector("#con");
 let waitlist_click = document.querySelector(".btn-join-second");
 let header_bar = document.querySelector("header");
 const faqs = document.querySelectorAll('.faq');
+
+ window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+ });
 
 menus_btn.addEventListener("click", function () {
   navigation_bar.classList.add("active");
@@ -129,3 +154,16 @@ document.querySelector(".popup .close-btn").addEventListener("click", function()
 });
 
 
+/* --============= LOADER ===============--> */
+
+
+// ScrollReveal({ 
+//   reset: true,
+//   distance: '60px',
+//   duration: 2500,
+//   delay: 400,
+// });
+
+// ScrollReveal().reveal('.content-one-text', { delay: 500 });
+
+// ScrollReveal().reveal(target, options);
